@@ -1,0 +1,36 @@
+<div class="fluid-container">
+  <div class="jumbotron">
+  <div class="row">
+    <div class="col"> <button class="btn btn-primary" (click)="angularCourse()" >Angular Course </button> </div>
+    <div class="col"> <button class="btn btn-primary" (click)="DjangoCourse()" >Django Course </button> </div>
+    <div class="col"> <button class="btn btn-primary" (click)="phpCourse()"> PHP Course </button> </div>
+  </div>
+  </div>
+  <div class="jumbotron">
+  <div *ngIf="angularResponse">
+    <ul>
+        <li> Course ID: {{ angularResponse.courseID }} </li>
+        <li> Course Name: {{ angularResponse.courseName }} </li>
+        <li> Course Hours:  {{ angularResponse.courseCreditHours }} </li>
+        <li> Course Teacher: {{ angularResponse.courseTeacher }} </li>
+    </ul>
+  </div>
+  <div *ngIf="djangoResponse">
+    <ul>
+        <li> Course ID: {{ djangoResponse.courseID }} </li>
+        <li> Course Name: {{ djangoResponse.courseName }} </li>
+        <li> Course Hours:  {{ djangoResponse.courseCreditHours }} </li>
+        <li> Course Teacher: {{ djangoResponse.courseTeacher }} </li>
+    </ul>
+  </div>
+  <div *ngIf="PHPresponse">
+    <ul>
+        <li> Course ID: {{ PHPresponse.courseID }} </li>
+        <li> Course Name: {{ PHPresponse.courseName }} </li>
+        <li> Course Hours:  {{ PHPresponse.courseCreditHours }} </li>
+        <li> Course Teacher: {{ PHPresponse.courseTeacher }} </li>
+    </ul>
+  </div>
+  </div>
+<footer class="text-center bg-dark text-danger " style="padding-bottom: 4px; font-style: italic"> &copy; 2019 Shadow All Rights Reserved </footer>
+</div>
